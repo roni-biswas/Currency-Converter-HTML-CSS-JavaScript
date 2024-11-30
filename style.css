@@ -124,7 +124,16 @@ form img {
 
 /* responsice */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90vw;
+    }
+    #btn {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
     .container {
         width: 70vw;
     }
@@ -142,13 +151,13 @@ form img {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     #btn {
         width: 70%;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     #btn {
         width: 60%;
     }
