@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter - Using JavaScript | Roni Biswas</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1" />
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>from</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/BE/flat/64.png" alt="flag-img" />
+                        <select name="from">
+                            <option value="BD">BD</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/BE/flat/64.png" alt="flag-img" />
+                        <select name="to">
+                            <option value="BD">BD</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="msg">Result: 1 BD = 100 USD</div>
+            <button id="btn">Get Exchange Rate</button>
+            <div id="date">Nov 29, 12:20PM</div>
+        </form>
+    </div>
+
+    <!-- currency codes js -->
+    <script src="currency-codes.js"></script>
+    <!-- custom js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
